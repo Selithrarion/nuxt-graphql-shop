@@ -3,48 +3,6 @@ import { ApolloServer, gql } from 'apollo-server-express';
 
 const app = express();
 
-const typeDefs = gql`
-	type Query {
-		getAllPizza: [Pizza]
-	}
-	type Pizza {
-		name: String!
-		price: Int!
-		type: String!
-		appeared: Int!
-		orders: Int!
-		pizzaCrusts: [PizzaCrusts]
-		pizzaSizes: [PizzaSizes]
-		imgUrl: String!
-		id: Int!
-	}
-	type PizzaCrusts {
-		type: String!
-		isAvailable: Boolean!
-	}
-	type PizzaSizes {
-		size: String!
-		isAvailable: Boolean!
-	}
-`;
-const resolvers = {
-	Query: {
-		getAllPizza: () => {
-			return pizzaData;
-		},
-	},
-};
-const server = new ApolloServer({
-	typeDefs,
-	resolvers,
-});
-server.applyMiddleware({ app });
-module.exports = app;
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, () =>
-	console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
-);
-
 const pizzaData = [
 	{
 		name: 'Сырная',
@@ -179,3 +137,46 @@ const pizzaData = [
 		id: 4,
 	},
 ];
+
+
+const typeDefs = gql`
+	type Query {
+		getAllPizza: [Pizza]
+	}
+	type Pizza {
+		name: String!
+		price: Int!
+		type: String!
+		appeared: Int!
+		orders: Int!
+		pizzaCrusts: [PizzaCrusts]
+		pizzaSizes: [PizzaSizes]
+		imgUrl: String!
+		id: Int!
+	}
+	type PizzaCrusts {
+		type: String!
+		isAvailable: Boolean!
+	}
+	type PizzaSizes {
+		size: String!
+		isAvailable: Boolean!
+	}
+`;
+const resolvers = {
+	Query: {
+		getAllPizza: () => {
+			return pizzaData;
+		},
+	},
+};
+const server = new ApolloServer({
+	typeDefs,
+	resolvers,
+});
+server.applyMiddleware({ app });
+const PORT = process.env.PORT || 4000;
+app.listen(PORT, () =>
+	console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
+);
+module.exports = app;
