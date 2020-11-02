@@ -104,8 +104,8 @@ export default {
 				selectedCrustPrice = costCrustThin;
 			else selectedCrustPrice = costCrustTraditional;
 
-			if (this.pizzaSize === 26) selectedSizePrice = costSize26;
-			else if (this.pizzaSize === 30) selectedSizePrice = costSize30;
+			if (this.pizzaSize === '26') selectedSizePrice = costSize26;
+			else if (this.pizzaSize === '30') selectedSizePrice = costSize30;
 			else selectedSizePrice = costSize40;
 
 			finalPrice =
