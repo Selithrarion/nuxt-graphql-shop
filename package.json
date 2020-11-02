@@ -23,7 +23,7 @@
 		"express": "4.17.1",
 		"graphql": "15.4.0",
 		"graphql-tag": "2.11.0",
-		"nuxt": "^2.12.2",
+		"nuxt": "^2.12.2"
 	},
 	"resolutions": {
 		"graphql": "^15.4.0"
