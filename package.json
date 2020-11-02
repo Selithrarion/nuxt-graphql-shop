@@ -24,7 +24,6 @@
 		"graphql": "15.4.0",
 		"graphql-tag": "2.11.0",
 		"nuxt": "^2.12.2",
-		"reqlim": "^0.0.0"
 	},
 	"resolutions": {
 		"graphql": "^15.4.0"
