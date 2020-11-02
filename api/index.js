@@ -175,8 +175,10 @@ const server = new ApolloServer({
 	resolvers,
 });
 server.applyMiddleware({ app });
-const PORT = process.env.PORT || 4000;
-app.listen(PORT, () =>
-	console.log(`🚀 Server ready at http://localhost:4000${server.graphqlPath}`)
-);
+if (require.main === module) {
+	const port = process.env.PORT || 3001;
+	app.listen(port, () => {
+		console.log(`API server listening on port ${port}`);
+	});
+}
 module.exports = app;
