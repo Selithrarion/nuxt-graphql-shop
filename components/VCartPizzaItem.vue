@@ -19,7 +19,7 @@
 							Пицца "{{ pizza.name }}"
 						</v-list-item-title>
 						<v-list-item-subtitle
-							>{{ pizza.type }} тесто,
+							>{{ pizza.crust }} тесто,
 							{{ pizza.size }} см.</v-list-item-subtitle
 						>
 					</v-list-item-content>
