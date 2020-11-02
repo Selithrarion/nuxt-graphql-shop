@@ -9,8 +9,7 @@
 		"build": "nuxt build",
 		"start": "nuxt start",
 		"generate": "nuxt generate",
-		"post-update": "yarn upgrade --latest",
-		"heroku-postbuild": "npm run build"
+		"post-update": "yarn upgrade --latest"
 	},
 	"dependencies": {
 		"@nuxt/components": "1.1.1",
