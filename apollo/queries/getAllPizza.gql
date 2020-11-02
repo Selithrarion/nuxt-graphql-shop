@@ -1,0 +1,19 @@
+{
+	getAllPizza {
+		name
+		price
+		type
+		appeared
+		orders
+		pizzaCrusts {
+			type
+			isAvailable
+		}
+		pizzaSizes {
+			size
+			isAvailable
+		}
+		imgUrl
+		id
+	}
+}
