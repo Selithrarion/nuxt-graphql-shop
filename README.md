@@ -1,2 +1,4 @@
 # nuxt-graphql-shop
-Created with CodeSandbox
+
+Pizza vue-nuxt graphql(apollo) shop.
+[gif](demo-gif.gif)
