@@ -138,7 +138,6 @@ const pizzaData = [
 	},
 ];
 
-
 const typeDefs = gql`
 	type Query {
 		getAllPizza: [Pizza]

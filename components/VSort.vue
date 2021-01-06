@@ -2,10 +2,8 @@
 	<v-row class="v-sort mb-6 align-center">
 		<v-btn-toggle mandatory rounded>
 			<v-btn large @click="selectType('all')">Все</v-btn>
-			<v-btn large @click="selectType('meat')">Месные</v-btn>
-			<v-btn large @click="selectType('vegeterian')"
-				>Вегетерианские</v-btn
-			>
+			<v-btn large @click="selectType('meat')">Мясные</v-btn>
+			<v-btn large @click="selectType('vegeterian')">Вегетерианские</v-btn>
 			<v-btn large @click="selectType('grill')">Гриль</v-btn>
 			<v-btn large @click="selectType('spicy')">Острые</v-btn>
 			<v-btn rounded large @click="selectType('closed')">Закрытые</v-btn>
@@ -55,5 +53,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

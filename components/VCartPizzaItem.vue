@@ -9,10 +9,7 @@
 					v-ripple="{ class: `white--text` }"
 				>
 					<v-list-item-avatar width="64px" height="64px">
-						<v-img
-							:alt="`${pizza.name} пицца`"
-							:src="pizza.imgUrl"
-						></v-img>
+						<v-img :alt="`${pizza.name} пицца`" :src="pizza.imgUrl"></v-img>
 					</v-list-item-avatar>
 					<v-list-item-content>
 						<v-list-item-title class="v-cart-pizza-item__title">
@@ -36,9 +33,7 @@
 							<v-icon color="primary">mdi-plus-circle</v-icon>
 						</v-btn>
 					</span>
-					<span class="v-cart-pizza-item__price mx-2"
-						>{{ pizza.price }} ₽</span
-					>
+					<span class="v-cart-pizza-item__price mx-2">{{ pizza.price }} ₽</span>
 					<v-btn icon @click="removePizzaFromCart(pizza.cartId)">
 						<v-icon color="#d3d3d3de">mdi-close</v-icon>
 					</v-btn>

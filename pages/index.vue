@@ -1,9 +1,6 @@
 <template>
 	<div class="main-page">
-		<VSort
-			@selecttype="onSelectType"
-			@selectfilter="onSelectFilter"
-		></VSort>
+		<VSort @selecttype="onSelectType" @selectfilter="onSelectFilter"></VSort>
 		<h1>Все пиццы</h1>
 		<v-row>
 			<LazyVPizzaItem
@@ -73,5 +70,4 @@ export default {
 };
 </script>
 
-<style scoped>
-</style>
+<style scoped></style>

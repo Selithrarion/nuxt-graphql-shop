@@ -100,8 +100,7 @@ export default {
 			let selectedSizePrice = 0;
 			let finalPrice = 0;
 
-			if (this.pizzaCrust === 'тонкое')
-				selectedCrustPrice = costCrustThin;
+			if (this.pizzaCrust === 'тонкое') selectedCrustPrice = costCrustThin;
 			else selectedCrustPrice = costCrustTraditional;
 
 			if (this.pizzaSize === '26') selectedSizePrice = costSize26;

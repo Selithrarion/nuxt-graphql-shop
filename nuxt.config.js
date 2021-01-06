@@ -27,7 +27,7 @@ export default {
 	apollo: {
 		clientConfigs: {
 			default: {
-				httpEndpoint: process.env.BASE_URL + 'api/graphql',
+				httpEndpoint: process.env.BASE_URL + '/api/graphql',
 			},
 		},
 	},
@@ -56,9 +56,6 @@ export default {
 				},
 			},
 		},
-	},
-	build: {
-		extend(config, ctx) {},
 	},
 	env: {
 		appName: 'NuxtGraphQLShop',

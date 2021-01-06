@@ -2,22 +2,15 @@
 	<div class="cart">
 		<v-row class="justify-center">
 			<v-col cols="12" sm="8">
-				<div
-					class="cart__empty text-center mt-6"
-					v-if="cart.length === 0"
-				>
+				<div class="cart__empty text-center mt-6" v-if="cart.length === 0">
 					<h2>Ох. Кажется корзина всё ещё пустая!</h2>
 					<p>Выбери какую-то пиццу на главной странице 😀</p>
 					<nuxt-link class="cart__empty-link" to="/"
-						><v-btn text color="primary"
-							>на главную</v-btn
-						></nuxt-link
+						><v-btn text color="primary">на главную</v-btn></nuxt-link
 					>
 				</div>
 				<div class="cart__main" v-else>
-					<h2>
-						<v-icon class="mr-2">mdi-cart-outline</v-icon>Корзина
-					</h2>
+					<h2><v-icon class="mr-2">mdi-cart-outline</v-icon>Корзина</h2>
 					<VCartPizzaItem
 						:pizzas="cart"
 						@clickminus="onClickMinus"
@@ -34,16 +27,12 @@
 
 						<span class="ml-auto">
 							Сумма заказа:
-							<span class="cart__main-footer-money">
-								{{ cartMoney }} ₽
-							</span>
+							<span class="cart__main-footer-money"> {{ cartMoney }} ₽ </span>
 						</span>
 					</v-row>
 					<v-row class="mt-4">
 						<nuxt-link to="/" class="link"
-							><v-btn rounded large
-								>Вернуться назад</v-btn
-							></nuxt-link
+							><v-btn rounded large>Вернуться назад</v-btn></nuxt-link
 						>
 						<v-spacer></v-spacer>
 						<nuxt-link to="/pay" class="link"
